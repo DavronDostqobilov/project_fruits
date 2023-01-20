@@ -9,6 +9,7 @@ def get_fruits(file_path: str):
         list: list of fruits
     """
     f=open(file_path)
-    ans=csv.reader(f)
-    return list(ans)
+    ans=f.read()
+    ans=ans.split('\n')
+    return ans
 print(get_fruits('fruits.csv'))
