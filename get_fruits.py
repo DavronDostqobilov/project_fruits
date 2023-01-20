@@ -1,4 +1,3 @@
-import csv
 def get_fruits(file_path: str):
     """
     Reads the file file_path and returns a list of fruits
