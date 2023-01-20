@@ -14,6 +14,7 @@ def get_frutis_name(data:str)->list:
     javob=[]
     for i  in ans:
         list1.append(i.split(','))
+    list1.pop(0)
     for j in list1:
         javob.append(j[0])
     return javob
