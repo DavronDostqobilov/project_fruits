@@ -11,5 +11,8 @@ def get_fruits(file_path: str):
     f=open(file_path)
     ans=f.read()
     ans=ans.split('\n')
-    return ans
+    list1=[]
+    for i in ans:
+        list1.append(i.split(','))
+    return list1
 print(get_fruits('fruits.csv'))
